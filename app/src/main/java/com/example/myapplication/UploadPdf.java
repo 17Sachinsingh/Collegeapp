@@ -112,6 +112,7 @@ public class UploadPdf extends AppCompatActivity {
         });
     }
 
+    //for uploading data in databse
     private void uploadData(String s) {
         String uniquekey=databaseReference.child("Pdf").push().getKey();
 
