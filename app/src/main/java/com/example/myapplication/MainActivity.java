@@ -6,6 +6,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 
+import com.example.myapplication.faculty.UpdateFaculty;
 import com.google.android.material.card.MaterialCardView;
 import com.google.firebase.FirebaseApp;
 
@@ -20,6 +21,7 @@ public class MainActivity extends AppCompatActivity {
         MaterialCardView noticeCard= findViewById(R.id.addNotice);
         MaterialCardView addGalleryImage=findViewById(R.id.addGalleryImage);
         MaterialCardView uploadPdf=findViewById(R.id.addeBook);
+        MaterialCardView addFaculty=findViewById(R.id.addFaculty);
         noticeCard.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -39,6 +41,13 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
                 Intent pdfIntent=new Intent(MainActivity.this,UploadPdf.class);
                 startActivity(pdfIntent);
+            }
+        });
+        addFaculty.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent facIntent=new Intent(MainActivity.this, UpdateFaculty.class);
+                startActivity(facIntent);
             }
         });
     }

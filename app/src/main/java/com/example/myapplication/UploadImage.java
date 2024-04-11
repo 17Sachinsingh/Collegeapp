@@ -57,8 +57,6 @@ public class UploadImage extends AppCompatActivity {
         setContentView(R.layout.activity_upload_image);
 
         selectImage=findViewById(R.id.addGalleryImage);
-
-
         imageCategory=findViewById(R.id.image_category);
         uploadImage=findViewById(R.id.uploadImageButton);
         galleryImageView=findViewById(R.id.galleryImageView);
